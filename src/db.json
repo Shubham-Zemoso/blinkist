@@ -1,0 +1,106 @@
+{
+	"books": [
+		{
+			"id": "1",
+			"image": "/Images/1.png",
+			"title": "Bring Your Human to Work",
+			"author": "Erica Keswin",
+			"minutes": "13-minute read",
+			"reads": "",
+			"status": "currentlyReading",
+			"type": "Trending"
+		},
+		{
+			"id": "2",
+			"image": "/Images/11.png",
+			"title": "Employee to Entrepreneur",
+			"author": "Steve Glaveski",
+			"minutes": "15-minute read",
+			"reads": "",
+			"status": "finished",
+			"type": "Trending"
+		},
+		{
+			"id": "3",
+			"image": "/Images/3.png",
+			"title": "Doesn’t Hurt to Ask",
+			"author": "Trey Gowdy",
+			"minutes": "13-minute read",
+			"reads": "1.9k reads",
+			"status": "finished",
+			"type": "Trending"
+		},
+		{
+			"id": "4",
+			"image": "/Images/4.png",
+			"title": "The Fate of Food",
+			"author": "Amanda Little",
+			"minutes": "12-minute read",
+			"reads": "16k reads",
+			"status": "currentlyReading",
+			"type": "Trending",
+			"audio": true
+		},
+		{
+			"id": "5",
+			"image": "/Images/5.png",
+			"title": "Lives of the Stoics",
+			"author": "Ryan Holiday, Stephen Hansel",
+			"minutes": "13-minute read",
+			"reads": "",
+			"status": "finished",
+			"type": "Trending"
+		},
+		{
+			"id": "6",
+			"image": "/Images/6.png",
+			"title": "Loving Your Business",
+			"author": "Debbie King",
+			"minutes": "13-minute read",
+			"reads": "",
+			"status": "currentlyReading",
+			"type": "Trending",
+			"audio": true
+		},
+		{
+			"id": "7",
+			"image": "/Images/7.png",
+			"title": "The Lonely Century",
+			"author": "Noreena Hertz",
+			"minutes": "15-minute read",
+			"reads": "",
+			"status": "currentlyReading",
+			"type": "justadded"
+		},
+		{
+			"id": "8",
+			"image": "/Images/8.png",
+			"title": "Eat Better, Feel Better",
+			"author": "Giada De Laurentiis",
+			"minutes": "13-minute read",
+			"reads": "1.9k reads",
+			"status": "currentlyReading",
+			"type": "justadded"
+		},
+		{
+			"id": "9",
+			"image": "/Images/9.png",
+			"title": "Dropshipping",
+			"author": "James Moore",
+			"minutes": "12-minute read",
+			"reads": "",
+			"status": "currentlyReading",
+			"type": "justadded"
+		},
+		{
+			"id": "10",
+			"image": "/Images/2.png",
+			"title": "Beyond Entrepreneurship",
+			"author": "Jim Collins & Bill Lazier",
+			"minutes": "13-minute read",
+			"reads": "",
+			"status": "",
+			"type": "Trending"
+		}
+	]
+}
