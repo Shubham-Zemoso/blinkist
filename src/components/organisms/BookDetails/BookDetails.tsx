@@ -9,7 +9,6 @@ interface Props {
 }
 
 const BookDetails = ({ bookData }: Props) => {
-	console.log("first book = ", bookData);
 	return (
 		<div style={{ height: "304px" }}>
 			<Typography variant="h1">{bookData.title}</Typography>

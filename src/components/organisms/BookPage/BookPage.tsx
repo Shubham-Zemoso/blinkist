@@ -1,17 +1,24 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Typography } from "@mui/material";
 import BookDetails from "../BookDetails/BookDetails";
-import { StateProps } from "../../Types/Types";
-import data from "../../../db.json";
+import { useParams } from "react-router-dom";
+import axios from "axios";
 const BookPage = () => {
-	const dummy = {
+	const [book, setBook] = useState({
 		id: "0",
 		title: "Unknown",
 		author: "Not Known",
 		reads: "",
-	};
+		image: "",
+	});
 
-	const book: StateProps = data.books[1];
+	const { id } = useParams();
+
+	useEffect(() => {
+		axios.get(`http://localhost:8000/books/${id}`).then((res) => {
+			setBook(res.data);
+		});
+	}, []);
 
 	return (
 		<div
@@ -34,7 +41,7 @@ const BookPage = () => {
 					justifyContent: "space-between",
 				}}
 			>
-				<BookDetails bookData={book.id === "234" ? dummy : book} />
+				<BookDetails bookData={book} />
 				<img src={book.image} alt="book" width="304px" height="304px" />
 			</div>
 		</div>
