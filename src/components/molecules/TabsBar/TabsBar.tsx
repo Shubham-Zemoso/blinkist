@@ -64,7 +64,6 @@ const TabsBar = () => {
 			>
 				<Box sx={{ borderBottom: 1, borderColor: "divider", width: "912px" }}>
 					<Tabs
-						// textColor="inherit"
 						value={value}
 						onChange={handleChange}
 						aria-label="basic tabs example"
