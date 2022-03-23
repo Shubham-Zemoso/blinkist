@@ -2,20 +2,28 @@ import React, { useEffect, useState } from "react";
 import { Grid } from "@mui/material";
 import BookCard from "../../molecules/BookCard/BookCard";
 import { StateProps } from "../../Types/Types";
+import { getBooks } from "../../../reducers/BooksReducer";
+import { RootState } from "../../../store/store";
 import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
 interface Props {
 	children?: React.ReactNode;
 	label?: string;
 }
 
 const BookGrid = ({ children, label }: Props) => {
-	const [books, setBooks] = useState([]);
+	// useEffect(() => {
+	// 	axios.get(`http://localhost:8000/books`).then((res) => {
+	// 		setBooks(res.data);
+	// 	});
+	// }, []);
+
+	const dispatch = useDispatch();
+	const { books } = useSelector((state: RootState) => state.books);
 
 	useEffect(() => {
-		axios.get(`http://localhost:8000/books`).then((res) => {
-			setBooks(res.data);
-		});
-	}, []);
+		dispatch(getBooks("books"));
+	}, [dispatch]);
 
 	return (
 		<Grid
@@ -33,7 +41,7 @@ const BookGrid = ({ children, label }: Props) => {
 				? books.map((book: StateProps) => {
 						return (
 							<Grid item>
-								<BookCard children={children} img={book} />
+								<BookCard children={children} bookData={book} />
 							</Grid>
 						);
 				  })
@@ -42,7 +50,7 @@ const BookGrid = ({ children, label }: Props) => {
 						?.map((item: StateProps) => {
 							return (
 								<Grid item>
-									<BookCard status="lib" children={children} img={item} />
+									<BookCard status="lib" children={children} bookData={item} />
 								</Grid>
 							);
 						})}
