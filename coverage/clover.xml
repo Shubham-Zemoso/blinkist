@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1648277822598" clover="3.2.0">
+  <project timestamp="1648277822599" name="All files">
+    <metrics statements="40" coveredstatements="32" conditionals="6" coveredconditionals="2" methods="12" coveredmethods="7" elements="58" coveredelements="41" complexity="0" loc="40" ncloc="40" packages="8" files="8" classes="8"/>
+    <package name="src">
+      <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="Icons.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\Icons.tsx">
+        <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="4" count="2" type="stmt"/>
+        <line num="9" count="2" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="22" count="2" type="stmt"/>
+        <line num="27" count="2" type="stmt"/>
+        <line num="32" count="2" type="stmt"/>
+        <line num="37" count="2" type="stmt"/>
+        <line num="42" count="2" type="stmt"/>
+        <line num="47" count="2" type="stmt"/>
+        <line num="52" count="2" type="stmt"/>
+        <line num="60" count="2" type="stmt"/>
+        <line num="65" count="2" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.atoms.Buttons">
+      <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Buttons.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\atoms\Buttons\Buttons.tsx">
+        <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="22" count="1" type="stmt"/>
+        <line num="34" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.atoms.NavItem">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="NavItem.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\atoms\NavItem\NavItem.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="16" count="3" type="stmt"/>
+        <line num="26" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.molecules.Lists">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Lists.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\molecules\Lists\Lists.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="4" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.organisms.Banner">
+      <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+      <file name="Banner.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\organisms\Banner\Banner.tsx">
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+        <line num="4" count="1" type="stmt"/>
+        <line num="5" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.organisms.DropDown">
+      <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+      <file name="DropDown.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\organisms\DropDown\DropDown.tsx">
+        <metrics statements="7" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="3" coveredmethods="0"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="23" count="0" type="stmt"/>
+        <line num="37" count="0" type="stmt"/>
+        <line num="132" count="0" type="stmt"/>
+        <line num="155" count="1" type="stmt"/>
+        <line num="156" count="0" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.organisms.Footer">
+      <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+      <file name="Footer.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\organisms\Footer\Footer.tsx">
+        <metrics statements="4" coveredstatements="4" conditionals="0" coveredconditionals="0" methods="2" coveredmethods="2"/>
+        <line num="5" count="1" type="stmt"/>
+        <line num="6" count="3" type="stmt"/>
+        <line num="24" count="1" type="stmt"/>
+        <line num="25" count="3" type="stmt"/>
+      </file>
+    </package>
+    <package name="src.components.organisms.Header">
+      <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="3" coveredmethods="1"/>
+      <file name="Header.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\organisms\Header\Header.tsx">
+        <metrics statements="8" coveredstatements="5" conditionals="6" coveredconditionals="2" methods="3" coveredmethods="1"/>
+        <line num="16" count="1" type="stmt"/>
+        <line num="17" count="2" type="stmt"/>
+        <line num="18" count="2" type="stmt"/>
+        <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
+        <line num="21" count="0" type="stmt"/>
+        <line num="25" count="2" type="stmt"/>
+        <line num="26" count="0" type="stmt"/>
+        <line num="29" count="2" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

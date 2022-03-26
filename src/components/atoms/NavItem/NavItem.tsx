@@ -39,7 +39,7 @@ const NavItem = ({
 			>
 				{children}
 			</Typography>
-			<div id="endIcon">{endIcon}</div>
+			<div data-testid="endIcon">{endIcon}</div>
 		</div>
 	);
 };

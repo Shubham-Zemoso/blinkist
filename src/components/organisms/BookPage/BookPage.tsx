@@ -1,24 +1,18 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Typography } from "@mui/material";
 import BookDetails from "../BookDetails/BookDetails";
 import { useParams } from "react-router-dom";
-import axios from "axios";
+import { useDispatch, useSelector } from "react-redux";
+import { RootState } from "../../../store/store";
+import { getBook } from "../../../reducers/BookReducer";
 const BookPage = () => {
-	const [book, setBook] = useState({
-		id: "0",
-		title: "Unknown",
-		author: "Not Known",
-		reads: "",
-		image: "",
-	});
-
 	const { id } = useParams();
+	const dispatch = useDispatch();
+	const { book } = useSelector((state: RootState) => state.book);
 
 	useEffect(() => {
-		axios.get(`http://localhost:8000/books/${id}`).then((res) => {
-			setBook(res.data);
-		});
-	}, []);
+		dispatch(getBook(id));
+	}, [dispatch, id]);
 
 	return (
 		<div

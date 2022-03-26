@@ -36,21 +36,21 @@ const data = {
 };
 
 Primary.args = {
-	img: data,
+	bookData: data,
 };
 
 export const FinishedCard = Template.bind({});
 
 FinishedCard.args = {
 	children: <ReadAgain label="Finished" />,
-	img: data,
+	bookData: data,
 };
 
 export const ReadAgainCard = Template.bind({});
 
 ReadAgainCard.args = {
 	children: <ReadAgain label="Read Again" />,
-	img: data,
+	bookData: data,
 };
 
 export const AddToLibrary = Template.bind({});
@@ -67,6 +67,6 @@ const allProps = {
 };
 
 AddToLibrary.args = {
-	img: data,
+	bookData: data,
 	children: <Buttons variant="contained" {...allProps} color="secondary" />,
 };

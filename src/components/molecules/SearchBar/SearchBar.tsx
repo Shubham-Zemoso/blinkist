@@ -1,7 +1,7 @@
 import React from "react";
 import { TextField, InputAdornment } from "@mui/material";
 import { SearchIcon } from "../../../Icons";
-const SearchComponent = () => {
+const SearchBar = () => {
 	return (
 		<div style={{ width: "912px", margin: "58px auto 0px auto" }}>
 			<TextField
@@ -46,4 +46,4 @@ const SearchComponent = () => {
 	);
 };
 
-export default SearchComponent;
+export default SearchBar;
