@@ -5,7 +5,7 @@ import { StateProps } from "../components/Types/Types";
 export const getBook = createAsyncThunk(
 	"books/getBook",
 	async (id: string | undefined) => {
-		const res = await axios(`http://localhost:8000/books/${id}`);
+		const res = await axios.get(`http://localhost:8000/books/${id}`);
 		return res.data;
 	}
 );

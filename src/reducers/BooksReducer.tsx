@@ -6,7 +6,7 @@ export const getBooks = createAsyncThunk(
 	"books/getbooks",
 	async (data: string) => {
 		console.log("entered");
-		const res = await axios(`http://localhost:8000/${data}`);
+		const res = await axios.get(`http://localhost:8000/${data}`);
 		return res.data;
 	}
 );
