@@ -22,10 +22,12 @@ export const updateBook = createAsyncThunk(
 );
 
 interface State {
+	status: string;
 	book: StateProps;
 }
 
 const initialState: State = {
+	status: "",
 	book: {
 		id: "0",
 		title: "Unknown",
@@ -40,11 +42,29 @@ const bookSlice = createSlice({
 	initialState,
 	reducers: {},
 	extraReducers: (builder) => {
+		builder.addCase(getBook.pending, (state, action) => {
+			state.status = "loading";
+		});
 		builder.addCase(getBook.fulfilled, (state, action) => {
+			state.status = "success";
 			state.book = action.payload;
 		});
+
+		builder.addCase(getBook.rejected, (state, action) => {
+			state.status = "failed";
+		});
+
+		builder.addCase(updateBook.pending, (state, action) => {
+			state.status = "loading";
+		});
+
 		builder.addCase(updateBook.fulfilled, (state, action) => {
+			state.status = "success";
 			state.book = action.payload;
+		});
+
+		builder.addCase(updateBook.rejected, (state, action) => {
+			state.status = "failed";
 		});
 	},
 });

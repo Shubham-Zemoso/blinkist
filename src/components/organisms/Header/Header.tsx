@@ -75,10 +75,11 @@ const Header = () => {
 							>
 								{!anchorEl ? (
 									<DownArrowIcon
+										data-testid="downArrow"
 										sx={{ marginTop: "15px", marginLeft: "5px" }}
 									/>
 								) : (
-									<UpArrowIcon />
+									<UpArrowIcon data-testid="upArrow" />
 								)}
 							</IconButton>
 

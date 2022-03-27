@@ -12,10 +12,12 @@ export const getBooks = createAsyncThunk(
 );
 
 interface State {
+	status: string;
 	books: StateProps[];
 }
 
 const initialState: State = {
+	status: "",
 	books: [],
 };
 
@@ -24,9 +26,16 @@ const booksSlice = createSlice({
 	initialState,
 	reducers: {},
 	extraReducers: (builder) => {
-		builder.addCase(getBooks.fulfilled, (state, action) => {
-			console.log(action.payload);
-			state.books = action.payload;
+		builder.addCase(getBooks.pending, (state, action) => {
+			state.status = "loading";
+		});
+		builder.addCase(getBooks.fulfilled, (state, { payload }) => {
+			state.status = "success";
+			state.books = payload;
+		});
+
+		builder.addCase(getBooks.rejected, (state, action) => {
+			state.status = "failed";
 		});
 	},
 });
