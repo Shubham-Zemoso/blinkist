@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { Grid } from "@mui/material";
 import BookCard from "../../molecules/BookCard/BookCard";
 import { StateProps } from "../../Types/Types";
 import { getBooks } from "../../../reducers/BooksReducer";
 import { RootState } from "../../../store/store";
-import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 interface Props {
 	children?: React.ReactNode;
@@ -12,12 +11,6 @@ interface Props {
 }
 
 const BookGrid = ({ children, label }: Props) => {
-	// useEffect(() => {
-	// 	axios.get(`http://localhost:8000/books`).then((res) => {
-	// 		setBooks(res.data);
-	// 	});
-	// }, []);
-
 	const dispatch = useDispatch();
 	const { books } = useSelector((state: RootState) => state.books);
 
