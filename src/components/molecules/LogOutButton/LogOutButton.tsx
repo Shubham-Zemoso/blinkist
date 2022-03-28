@@ -1,7 +1,7 @@
 import React from "react";
 import { useAuth0 } from "@auth0/auth0-react";
 import { Avatar, Button, Menu, MenuItem } from "@mui/material";
-import { DownArrowIcon, UpArrowIcon } from "./Icons";
+import { DownArrowIcon, UpArrowIcon } from "../../../Icons";
 
 const LogOutButton = () => {
 	const [anchorEl, setAnchorEl] = React.useState<null | HTMLElement>(null);

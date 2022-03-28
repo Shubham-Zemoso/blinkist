@@ -8,7 +8,7 @@ import {
 	Container,
 	Button,
 } from "@mui/material";
-import LogOutButton from "../../../LogOutButton";
+import LogOutButton from "../../molecules/LogOutButton/LogOutButton";
 import { SearchIcon, DownArrowIcon, UpArrowIcon } from "../../../Icons";
 import DropDown from "../DropDown/DropDown";
 
