@@ -27,7 +27,7 @@
       "author": "Trey Gowdy",
       "minutes": "13-minute read",
       "reads": "1.9k reads",
-      "status": "currentlyReading",
+      "status": "finished",
       "type": "Trending"
     },
     {
@@ -37,7 +37,7 @@
       "author": "Amanda Little",
       "minutes": "12-minute read",
       "reads": "16k reads",
-      "status": "finished",
+      "status": "currentlyReading",
       "type": "Trending",
       "audio": true
     },

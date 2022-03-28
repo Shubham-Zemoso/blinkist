@@ -6,10 +6,9 @@ import {
 	IconButton,
 	Toolbar,
 	Container,
-	Avatar,
 	Button,
 } from "@mui/material";
-
+import LogOutButton from "../../molecules/LogOutButton/LogOutButton";
 import { SearchIcon, DownArrowIcon, UpArrowIcon } from "../../../Icons";
 import DropDown from "../DropDown/DropDown";
 
@@ -97,22 +96,7 @@ const Header = () => {
 						</div>
 						<div style={{ display: "flex" }}>
 							<Button disableRipple>
-								<Avatar
-									sx={{
-										display: "flex",
-										justifyContent: "flexEnd",
-										backgroundColor: "#69A6E3",
-									}}
-								>
-									S
-								</Avatar>
-								<DownArrowIcon
-									sx={{
-										marginTop: "15px",
-										marginLeft: "5px",
-										color: "text2.main",
-									}}
-								/>
+								<LogOutButton />
 							</Button>
 						</div>
 					</Toolbar>
