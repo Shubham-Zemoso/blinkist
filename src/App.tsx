@@ -7,9 +7,10 @@ import { ThemeProvider } from "@mui/material";
 import customTheme from "./Themes/customThemes";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
+import LoginPage from "./components/pages/LoginPage/LoginPage";
 
 function App() {
-	const { isAuthenticated, isLoading, loginWithRedirect } = useAuth0();
+	const { isAuthenticated, isLoading } = useAuth0();
 
 	if (isLoading) {
 		return <div>Loading...</div>;
@@ -28,11 +29,7 @@ function App() {
 			</ThemeProvider>
 		);
 	} else {
-		return (
-			<div>
-				<button onClick={() => loginWithRedirect()}>Log In</button>
-			</div>
-		);
+		return <LoginPage />;
 	}
 }
 
