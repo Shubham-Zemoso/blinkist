@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648539068747" clover="3.2.0">
-  <project timestamp="1648539068747" name="All files">
+<coverage generated="1648543653144" clover="3.2.0">
+  <project timestamp="1648543653145" name="All files">
     <metrics statements="160" coveredstatements="146" conditionals="30" coveredconditionals="21" methods="66" coveredmethods="55" elements="256" coveredelements="222" complexity="0" loc="160" ncloc="160" packages="26" files="27" classes="27"/>
     <package name="src">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -25,8 +25,8 @@
       <file name="Buttons.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\atoms\Buttons\Buttons.tsx">
         <metrics statements="3" coveredstatements="3" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="22" count="9" type="stmt"/>
+        <line num="33" count="27" type="stmt"/>
         <line num="34" count="27" type="stmt"/>
-        <line num="35" count="27" type="stmt"/>
       </file>
     </package>
     <package name="src.components.atoms.NavItem">
