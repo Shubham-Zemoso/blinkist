@@ -28,7 +28,6 @@ const Buttons = (props: Props) => {
 		height,
 		variant,
 		typo,
-		color,
 		typoColor,
 		id,
 	} = props;
