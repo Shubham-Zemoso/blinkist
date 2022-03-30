@@ -131,7 +131,7 @@ const Content = ({ anchorEl, handleClose }: ContentProps) => {
 						{ap.map((item, index) => {
 							return (
 								<Grid key={`item_${index}`} item xs={4}>
-									<Link href="/bookdetails/1">
+									<Link href="/entrepreneurship">
 										<NavItem
 											children={item.text}
 											left="12px"
