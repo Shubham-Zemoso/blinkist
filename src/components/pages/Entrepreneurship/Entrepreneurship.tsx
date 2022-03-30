@@ -4,7 +4,7 @@ import SearchBar from "../../molecules/SearchBar/SearchBar";
 import BooksGroup from "../../organisms/BooksGroup/BooksGroup";
 import Template from "../../template/Template";
 
-const LandingPage = () => {
+const Entrepreneurship = () => {
 	return (
 		<Template>
 			<Banner />
@@ -14,4 +14,4 @@ const LandingPage = () => {
 	);
 };
 
-export default LandingPage;
+export default Entrepreneurship;
