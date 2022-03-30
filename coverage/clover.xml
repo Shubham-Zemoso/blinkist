@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1648543653144" clover="3.2.0">
-  <project timestamp="1648543653145" name="All files">
+<coverage generated="1648620726563" clover="3.2.0">
+  <project timestamp="1648620726563" name="All files">
     <metrics statements="160" coveredstatements="146" conditionals="30" coveredconditionals="21" methods="66" coveredmethods="55" elements="256" coveredelements="222" complexity="0" loc="160" ncloc="160" packages="26" files="27" classes="27"/>
     <package name="src">
       <metrics statements="12" coveredstatements="12" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
@@ -235,9 +235,9 @@
         <line num="6" count="2" type="stmt"/>
       </file>
     </package>
-    <package name="src.components.pages.LandingPage">
+    <package name="src.components.pages.Entrepreneurship">
       <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
-      <file name="LandingPage.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\pages\LandingPage\LandingPage.tsx">
+      <file name="Entrepreneurship.tsx" path="C:\Users\shubh\Desktop\React-assignment-1\my-app\src\components\pages\Entrepreneurship\Entrepreneurship.tsx">
         <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <line num="7" count="1" type="stmt"/>
         <line num="8" count="2" type="stmt"/>

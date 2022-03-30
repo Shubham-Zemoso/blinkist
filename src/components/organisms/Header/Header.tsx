@@ -82,7 +82,7 @@ const Header = () => {
 								)}
 							</IconButton>
 
-							<Link href="/mylibrary" sx={{ textDecoration: "none" }}>
+							<Link href="/" sx={{ textDecoration: "none" }}>
 								<Typography
 									variant="body1"
 									sx={{
